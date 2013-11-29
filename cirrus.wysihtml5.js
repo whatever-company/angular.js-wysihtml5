@@ -1,6 +1,5 @@
-app.directive('wysihtml5', [
-  '$parse', '$timeout',
-  function ($parse, $timeout) {
+angular.module('cirrus.wysihtml5', [])
+  .directive('wysihtml5', ['$parse', '$timeout', function ($parse, $timeout) {
     return {
       restrict: 'A',
       //require: 'ngModel',
