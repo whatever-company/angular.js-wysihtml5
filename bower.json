@@ -1,0 +1,32 @@
+{
+  "name": "cirrus.wysihtml5",
+  "version": "0.0.1",
+  "main": [
+    "cirrus.wisyhtml5.js"
+  ],
+  "dependencies": {
+    "bootstrap3-wysihtml5-bower": "~0.2.1"
+  },
+  "homepage": "https://github.com/CirrusCPQ/cirrus.wysihtml5",
+  "authors": [
+    "Tyler Renelle <tylerrenelle@gmail.com>"
+  ],
+  "description": "Angular.js + Bootstrap 3 compatible wysihtml5 directive.",
+  "keywords": [
+    "bootstrap",
+    "wysiwyg",
+    "angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests",
+    "Gruntfile.js",
+    "package.json",
+    "src"
+  ]
+}
