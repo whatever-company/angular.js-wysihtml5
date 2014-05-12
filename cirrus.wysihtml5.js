@@ -18,10 +18,10 @@ angular.module('cirrus.wysihtml5', [])
           '<div style="padding:40px;height:{{height}}px;" ng-show="!clickToActivate" >' +
             '<div id="{{element_id}}-toolbar">' +
               '<div class="btn-group">' +
-                '<button class="btn btn-default btn-sm" data-wysihtml5-command="bold">Bold</button>' +
-                '<button class="btn btn-default btn-sm" data-wysihtml5-command="italic">Italic</button>' +
-                '<button class="btn btn-default btn-sm" data-wysihtml5-command="insertUnorderedList">Bullets</button>' +
-                '<button class="btn btn-default btn-sm" data-wysihtml5-command="insertOrderedList">Numbers</button>' +
+                '<button class="btn btn-default btn-xs" data-wysihtml5-command="bold">Bold</button>' +
+                '<button class="btn btn-default btn-xs" data-wysihtml5-command="italic">Italic</button>' +
+                '<button class="btn btn-default btn-xs" data-wysihtml5-command="insertUnorderedList">Bullets</button>' +
+                '<button class="btn btn-default btn-xs" data-wysihtml5-command="insertOrderedList">Numbers</button>' +
               '</div>' +
             '</div>' +
             '<textarea ng-model="wysihtml5" style="border:none;width:100%;margin-top:15px;height:{{+height*.75}}px;" />' +
