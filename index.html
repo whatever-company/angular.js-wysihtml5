@@ -2,25 +2,31 @@
 <html data-ng-app="app">
 
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Angular.js-wysihtml5 : " />
+      <!-- Styles -->
+      <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.min.css' />
+      <link rel='stylesheet' href="bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.css" />
 
-    <title>Angular.js-wysihtml5</title>
+      <!-- JavaScripts -->
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+      <script type='text/javascript' src='bower_components/jquery/jquery.min.js'></script>
+      <script type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+      <script type='text/javascript' src="bower_components/wysihtml5/parser_rules/simple.js"></script>
+      <script type='text/javascript' src="bower_components/wysihtml5/dist/wysihtml5-0.3.0.js"></script>
+      <script type='text/javascript' src="bower_components/handlebars/handlebars.runtime.min.js"></script>
+      <script type='text/javascript' src="bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.js"></script>
+      <!--<script type='text/javascript' src="bower_components/cirrus.wysihtml5/cirrus.wysihtml5.js"></script>-->
+      <script type='text/javascript' src="cirrus.wysihtml5.js"></script>
 
-    <script type="text/javascript" src="https://raw.github.com/xing/wysihtml5/master/parser_rules/simple.js"></script>
-    <script type="text/javascript" src="https://raw.github.com/xing/wysihtml5/master/dist/wysihtml5-0.3.0.min.js"></script>
+      <script>
+          var app = angular.module('app', ['cirrus.wysihtml5']);
+      </script>
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="http://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>
-
-    <script type="text/javascript" src="main.js"></script>
   </head>
 
-  <body data-ng-controller="AppCtrl">
-
-    <textarea data-wysihtml5="wysihtml5.content"></textarea>
-    {{ wysihtml5.content }}
-
+  <body>
+    <div>
+        <textarea wysihtml5="myModel" height="400" click-to-activate="true"></textarea>
+        {{ myModel }}
+    </div>
   </body>
 </html>
